@@ -1,0 +1,758 @@
+---
+---
+
+// @import 'jekyll-theme-cayman';
+// @import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// Breakpoints
+$large-breakpoint: 64em !default;
+$medium-breakpoint: 42em !default;
+$small-breakpoint: 18em !default;
+
+// Headers
+$header-heading-color: #fff !default;
+$header-bg-color: #de604d !default;
+$header-bg-color-secondary: #531212 !default;
+
+// Text
+$section-headings-color: #de604d !default;
+$body-text-color: #606c71 !default;
+$body-link-color: #5470de !default;
+$blockquote-text-color: #819198 !default;
+
+// Code
+$code-bg-color: #f3f6fa !default;
+$code-text-color: #8db0fe !default;
+
+// Borders
+$border-color: #dce6f0 !default;
+$table-border-color: #e9ebec !default;
+$hr-border-color: #eff0f1 !default;
+
+
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin xsmall {
+  @media screen and (max-width: #{$small-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media only screen and (orientation: portrait) {
+    @content;
+  }
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $body-text-color;
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-header {
+    // color: white;
+    text-decoration: none;
+    background-color: white;
+    height: 25vh;
+    background-image: url("../img/heatmap.jpg");
+    background-size: cover;
+    position:sticky;
+    top: -15vh;
+}
+  
+.container {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+    @include landscape {
+      @include large {
+        max-width: 64rem;
+        padding: 0rem 6rem;
+        margin: 0 auto;
+      }
+
+      @include medium {
+        padding: 0rem 4rem;
+      }
+      
+      @include small {
+        padding: 0rem 1rem;
+      }
+    }
+    @include portrait {
+      padding: 0rem 1rem;
+    }
+
+  }
+
+img {
+    height: 20vh;
+    border-radius: 0.3rem;
+  }
+
+.image {
+    // flex-basis: 20vh;
+    // min-width: 100px;
+    // height: 20vh;
+    // width: 20vh;
+    // // order: 1;
+    // display: block;
+    // // margin-left: 0;
+    
+  }
+
+
+.subcontainer{
+  height: 100%;
+  width: 100%;
+}
+
+
+.btn {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  min-width: 60px;
+  padding: .4vh .7vw .4vh;
+  font-size: 1.4vw;
+  font-family: 'Courier New', Courier, monospace;
+
+  
+  @include landscape {
+
+    @include large {
+      font-size: large;
+    }
+
+    @include medium {
+    }
+
+    @include small {
+      min-width: 0;
+
+    }
+
+  }
+
+  @include portrait {
+    min-width: 7em;
+    min-height: 10px;
+    font-size: 3vw;
+    @include large {
+      font-size: large;
+    }
+    @include medium {
+      font-size: large;
+    }
+  }
+  
+}
+
+.btn:hover {
+  text-decoration: none;
+  // background-color: #dddddd;
+  filter:saturate(0%);
+  }
+
+.btn + .btn {
+  margin-left: .5vw;
+  }
+
+.jlg {
+    text-align: center;
+    text-decoration:none;
+    // height: 13.5vh;
+    height: 15vh;
+    line-height: 15vh;
+    vertical-align: middle;
+    font-weight: 100;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+
+    @include landscape {
+      font-size: 4vw;
+      line-height: 15vh;
+      @include large {
+        font-size: 68px;
+      }
+    }
+
+    @include portrait {
+      font-size: 4vh;
+      line-height: 1em;
+      height: 9vh;
+      padding: 5vh 10vw 1vh;
+
+      @include small {
+        font-size: 5vw;
+      }
+    }
+}
+
+.jlg_btn {
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  padding: .4vh 2vw .4vh;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  line-height: normal;
+
+  // @include portrait {
+  //   min-width: 7em;
+  //   min-height: 10px;
+  //   font-size: 3vw;
+  //   @include large {
+  //     font-size: large;
+  //   }
+  //   @include medium {
+  //     font-size: large;
+  //   }
+  // }
+
+}
+.jlg_btn:hover {
+  text-decoration: none;
+  filter:saturate(0%);
+}
+
+
+
+.buttons_h{
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+
+  @include portrait {
+    display: none;
+    @include large {
+      display: unset;
+    }
+  }
+}
+
+.buttons_v{
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+
+  @include landscape {
+    display: none;
+  }
+
+  @include portrait {
+    @include large {
+      display: none;
+    }
+  }
+}
+
+
+
+// @media screen and (min-width: 64em) {
+//     .btn {
+//         // padding: 0.75rem 1rem;
+//     }
+//     }
+
+// @media screen and (min-width: 42em) and (max-width: 64em) {
+//     .btn {
+//         // padding: 0.6rem 0.9rem;
+//         font-size: 0.9rem;
+//     }
+//     }
+
+// @media screen and (max-width: 42em) {
+//     .btn {
+//         display: block;
+//         // padding: 0.75rem;
+//         font-size: 0.9rem;
+//         // min-width: 55px;
+//     }
+//     .btn + .btn {
+//         // margin-top: 1rem;
+//         margin-left: 0;
+//     }
+//     }
+
+
+/* JMenu 1.0 RC1 | MIT License | https://github.com/jamesjohnson280/JMenu */
+
+
+/* Menu bar and fonts */
+.jmenu {
+    transition: color 0.2s, background-color 0.2s,
+    border-color 0.2s;
+    display: block;
+  }
+.jmenu:hover {
+    // color: white;
+    text-decoration: none;
+    // background-color: #8db0fe;
+    border-color: white;
+    }
+  
+  /* Menu Button */
+  input.jm-menu-btn {
+    display: none; /* Hide the checkbox */
+  }
+  
+  input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
+    display: none; /* Hide menu on load */
+  }
+  
+  input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
+    display: block; /* Open when menu button is clicked */
+  }
+  
+  label.jm-menu-btn {
+    color: white; /* Light gray */
+    cursor: pointer;
+    
+    
+    // display: block;
+    // padding: 16px 32px;
+  }
+  
+  label.jm-menu-btn:hover {
+    color: #fff;
+    
+  }
+  
+  .jm-collapse {
+    /* Add border between menu and menu button when it's open */
+    // border-top: 1px white solid; /* Light Gray */
+    
+    // list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    background-color:rgba($color: white, $alpha: .7);
+    line-height: 6vh;
+    
+    
+    
+  }
+  
+  /* Menu Items */
+  .jmenu ul,
+  .jmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // display: inline-block;
+  }
+  
+  /* Links */
+  .jmenu a {
+    color: white; /* Light gray */
+    display: inline-block;
+    // padding: 16px 32px;
+    text-decoration: none;
+  }
+  
+  .jmenu a:hover {
+    color: #fff; /* White */
+  }
+  
+  // /* Submenu Items */
+  // .jmenu ul ul {
+  //   display: none; /* Hidden by default */
+  // }
+  
+  // /* Dropdowns */
+  
+  // .jm-dropdown:hover ul {
+  //   display: block;
+  // }
+  
+  // .jm-dropdown:hover a {
+  //   /* Make top-level menu item stay highlighted when hovering over children */
+  //   color: #fff; 
+  // }
+  
+  // .jm-dropdown ul {
+  //   background: #fff; /* White */
+  //   padding: 0;
+  // }
+  
+  // .jm-dropdown ul a,
+  // .jm-dropdown:hover ul a {
+  //   color: #0072bc; /* Blue */
+  // }
+  
+  // .jm-dropdown ul a:hover,
+  // .jm-dropdown:hover ul a:hover {
+  //   color: #000; /* Black*/
+  // }
+  
+  // /* Tertiary+ Menu Items */
+  // .jm-dropdown ul ul {
+  //   border-bottom: 1px #ccc solid; /* Light gray */
+  //   border-top: 1px #ccc solid;
+  //   box-shadow: none;
+  //   margin-bottom: 16px;
+  //   max-width: 100%;
+  //   position: relative;
+  // }
+  
+  // /* Icons */
+  // .jm-icon-dropdown {
+  //     border: solid #959595; /* Light gray */
+  //     border-width: 0 2px 2px 0;
+  //     display: inline-block;
+  //     margin: 0 0 3px 8px;
+  //     padding: 3px;
+  //     transform: rotate(45deg);
+  // } 
+  
+  // li:hover .jm-icon-dropdown {
+  //     border-color: #fff; /* White */
+  // } 
+  
+  .jm-icon-menu::before {
+    content: '\2630';
+  }
+  
+//   @media (min-width: 768px) {
+    
+//     /* Menu items */
+//     .jmenu li {
+//       display: inline-block;
+//     }
+    
+//     .jmenu a {
+//       padding: 16px;
+//     }
+    
+//     /* Dropdowns */
+//     .jm-dropdown {
+//       position: relative;
+//     }
+    
+//     .jm-dropdown li a {
+//       display: block;
+//       padding: 8px 16px;
+//       white-space: nowrap;
+//     }
+    
+//     .jm-dropdown ul {
+//     //   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
+//       padding: 8px 0;
+//       position: absolute;
+//       min-width: 100%;
+//     }
+    
+//     /* Menu Button */
+//     input.jm-menu-btn,
+//     label.jm-menu-btn {
+//       display: none; /* Hide menu button */
+//     }
+    
+//     input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
+//     .jm-collapse {
+//       display: block; /* Show menu */
+//     }
+  
+//   }
+
+
+.main-content {
+  word-wrap: break-word;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include landscape {
+
+    @include large {
+      max-width: 64rem;
+      padding: 2rem 6rem;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    @include medium {
+      padding: 0rem 4rem;
+      font-size: 1.1rem;
+    }
+    
+    @include small {
+      padding: 0rem 1rem;
+      font-size: .9rem;
+    }
+  }
+
+  @include portrait {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+
+    @include small {
+      font-size: .8rem;
+    }
+
+  }
+
+
+  
+  kbd {
+    background-color: #fafbfc;
+    border: 1px solid #c6cbd1;
+    border-bottom-color: #959da5;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #959da5;
+    color: #444d56;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 3px 5px;
+    vertical-align: middle;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $section-headings-color;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: $code-text-color;
+    background-color: $code-bg-color;
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: $code-text-color;
+    word-wrap: normal;
+    background-color: $code-bg-color;
+    border: solid 1px $border-color;
+    border-radius: 0.3rem;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: $code-text-color;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}
+
+.mstdn > span{
+  color:#9baec8;
+  font-size:12px;
+  padding-left:3px;
+}
+.mstdn > span:before{
+  content:"@";
+}
+
+.site-footer {
+    text-align: right;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px $hr-border-color;
+  
+    @include large {
+      font-size: .7rem;
+    }
+  
+    @include medium {
+      font-size: .7rem;
+    }
+  
+    @include small {
+      font-size: 0.6rem;
+    }
+  }
+  
+.site-footer-owner {
+    display: block;
+    font-weight: bold;
+  }
+  
+.site-footer-credits {
+    color: $blockquote-text-color;
+  }

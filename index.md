@@ -23,9 +23,7 @@ title: Juan Luis Gastaldi
 // } -->
 
 
-I am a philosopher and historian of science, specialized in the philosophy and history of formal knowledge (mathematics, logic and computer science), from the beginning of the 19th century to our days.
-
-My research focuses on the formalization of meaning as a central problem of modern and contemporary philosophy, determined by a complex articulation between logic, mathematics and linguistics. Developing the principles of historical epistemology, I propose an understanding of the emergence and evolution of formal knowledge, from early 19th century mathematized logic to contemporary computer science, guided by the problematic constitution of a theory of formal languages at the intersection of natural and social sciences.
+Funded by the Marie Skłodowska-Curie Actions programme, the SemioMaths project aims to propose a formal model for the automatic analysis of mathematical corpora, based on semiotic theories and recent advances in formal and computational linguistics. The ultimate goal is to provide a broad and solid framework for the philosophy and the history of mathematics, with special focus on mathematical practices. The project will study various existing mathematical corpora, develop concrete implementations of linguistic computational models on mathematical corpora and elaborate on the corresponding results in the form of scientific articles and a software package.
 
 # News
 

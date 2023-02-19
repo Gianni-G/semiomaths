@@ -11,7 +11,7 @@ plugins:
 github:
   home: ./
   about: ./p.about.html
-  cv: ./p.semiolog.html
+  semiolog: ./p.semiolog.html
   publications: ./p.publications.html
   projects: ./p.projects.html
   teaching: ./p.teaching.html

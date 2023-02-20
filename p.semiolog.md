@@ -6,7 +6,9 @@ title: Juan Luis Gastaldi
 
 # semiolog
 
-semiolog is a Python library for the semiological analysis of text
+`semiolog` is a Python library for the semiological analysis of text
+
+[Python package](https://pypi.org/project/semiolog/)
 
 [github](https://github.com/Gianni-G/semiolog)
 

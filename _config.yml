@@ -19,6 +19,7 @@ github:
 
 img:
   photo: ./assets/img/SemioMaths.pdf
+  eu: ./assets/img/eu_flag.jpg
   background: ./assets/img/heatmap.png
 
 # pdf:

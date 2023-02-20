@@ -13,12 +13,12 @@ github:
   about: ./p.about.html
   semiolog: ./p.semiolog.html
   publications: ./p.publications.html
-  projects: ./p.projects.html
+  talks: ./p.talks.html
   teaching: ./p.teaching.html
   contact: ./p.contact.html
 
 img:
-  photo: ./assets/img/G.jpg
+  photo: ./assets/img/SemioMaths.pdf
   background: ./assets/img/heatmap.png
 
 # pdf:

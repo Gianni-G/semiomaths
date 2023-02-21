@@ -97,11 +97,13 @@
 
       {{ content }}
 
-      <footer class="site-footer">
-        <img src="{{ site.img.eu }}" style="width: 30px; height: auto; border-radius: 0;" alt="EU flag">
-        <span>
+      <footer class="site-footer" style="display: flex; display-wrap: wrap;">
+        <div>
+          <img src="{{ site.img.eu }}" style="width: 30px; height: auto; border-radius: 0;" alt="EU flag">
+        </div>
+        <div style="padding-left: 1em; padding-top: .2em;">
           This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 839730.
-        </span>
+        </div>
       </footer>
     </main>
     <!-- <script src="{{ 'assets/js/random-color.js' }}"></script> -->

@@ -9,9 +9,6 @@ title: Juan Luis Gastaldi
 - J. L. Gastaldi (2023). “De Morgan’s De Morgan’s Laws: Duality in the Emergence of Formal Logic”. In: *Duality in 19th and 20th century mathematical thinking*. Ed. by R. Krömer, E. Haffner, and K. Volkert. Birkhäuser, forthcoming.\
 [[PDF]](./assets/pdf/pubs/Gastaldi2023a_s.pdf){:target="_blank"}
 
-- J. L. Gastaldi (2022). “[Boole’s Untruth Tables: The Formal Conditions of Meaning Before the Emergence of Propositional Logic](https://link.springer.com/chapter/10.1007/978-3-030-94452-0_7){:target="_blank"}”. In: Béziau, JY., Desclés, JP., Moktefi, A., Pascu, A.C. (eds) *Logic in Question. Studies in Universal Logic*. Birkhäuser, Cham. DOI: 10.1007/978-3-030-94452-0_7.\
-[[PDF]](./assets/pdf/pubs/Gastaldi2022.pdf){:target="_blank"}
-
 - J. L. Gastaldi (2021). “[Why Can Computers Understand Natural Language?](https://link.springer.com/article/10.1007/s13347-020-00393-9){:target="_blank"}” In: *Philosophy & Technology* 34.1 (2021), pp. 149–214. ISSN: 2210-5441. DOI: 10.1007/s13347-020-00393-9.\
 [[PDF]](./assets/pdf/pubs/Gastaldi2021.pdf){:target="_blank"}
 

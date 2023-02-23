@@ -4,8 +4,6 @@ title: Juan Luis Gastaldi
 # description: This is just another page
 ---
 
-<!-- <base target="_blank"> -->
-
 # Publications
 
 - J. L. Gastaldi (2023). “De Morgan’s De Morgan’s Laws: Duality in the Emergence of Formal Logic”. In: *Duality in 19th and 20th century mathematical thinking*. Ed. by R. Krömer, E. Haffner, and K. Volkert. Birkhäuser, forthcoming.\

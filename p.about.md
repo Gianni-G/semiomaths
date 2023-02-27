@@ -16,4 +16,4 @@ The SemioMaths project has introduced a novel perspective on the formal analysis
 
 ---
 
-[Data Management Plan](./assets/pdf/docs/d.1.1_dmp_v1.0.pdf)
+[Data Management Plan](./assets/pdf/docs/d.1.1_dmp_v2.0.pdf)

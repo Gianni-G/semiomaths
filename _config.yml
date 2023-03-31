@@ -15,6 +15,7 @@ github:
   publications: ./p.publications.html
   talks: ./p.talks.html
   teaching: ./p.teaching.html
+  wip: ./p.wip.html
   contact: ./p.contact.html
 
 img:

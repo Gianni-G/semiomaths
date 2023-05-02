@@ -16,4 +16,6 @@ title: Juan Luis Gastaldi
 
 [Eigen Projection of BNC Words (10K)](./assets/graphs/bnc_w_10k_proj.html){:target="_blank"}
 
-[Slides Test](./assets/graphs/slides.html){:target="_blank"}
+[Eigen Projection Wiki Chars](./assets/graphs/example_svd_3D.html){:target="_blank"}
+
+[Correlation Matrix Wiki Chars](./assets/graphs/example_MMt.html){:target="_blank"}

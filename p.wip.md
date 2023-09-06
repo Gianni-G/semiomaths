@@ -19,3 +19,7 @@ title: Juan Luis Gastaldi
 [Eigen Projection Wiki Chars](./assets/graphs/example_svd_3D.html){:target="_blank"}
 
 [Correlation Matrix Wiki Chars](./assets/graphs/example_MMt.html){:target="_blank"}
+
+[Tensor Wiki Chars (opaque)](./assets/graphs/tensor_opaque.html){:target="_blank"}
+
+[Tensor Wiki Chars (transparent)](./assets/graphs/tensor_transparent.html){:target="_blank"}
